@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block body_block %}
+    <div id="main">
+        <div class="header">
+            <h1>ActiveClean Dashboard</h1>
+        </div>
+
+        <div class="content">
+        	
+        	<div class="load-start">
+        	<center>
+
+            	<h3>Step 1. Please Load A Dataset To Begin</h3>
+            	<input type="file" name="data" accept="*"><br/><br/>
+            	<a class="pure-button pure-button-primary" href="#" onclick="loadFile()">Go!</a>
+        	</center>
+       	    </div>
+
+       	    <div class="extract-start" style="display: none;">
+        	<center>
+            	<h3>Step 2. How Would You Like To Extract This File?</h3>
+
+            	<form class="pure-form">
+    <fieldset>
+
+       XML <input id="option-one" type="checkbox" value="">&nbsp;&nbsp;&nbsp;&nbsp;
+       CSV <input id="option-one" type="checkbox" value=""> &nbsp;&nbsp;&nbsp;&nbsp;
+	   CUSTOM <input id="option-one" type="checkbox" value=""> &nbsp;&nbsp;&nbsp;&nbsp;
+
+        <button type="submit" class="pure-button pure-button-primary">Next</button>
+    </fieldset>
+</form>
+
+        	</center>
+        	    
+        	    <div class="extract-data" style="margin-top: 10px;">
+        	    </div>
+
+       	    </div>
+
+        </div>
+
+    </div>
+<script src="{% static "js/dashboard.js" %}"></script>
+
+{% endblock %}
+
