@@ -20,22 +20,47 @@
 
        	    <div class="extract-start" style="display: none;">
         	<center>
-            	<h3>Step 2. How Would You Like To Extract This File?</h3>
+            	<h3>Step 2. Define a Schema</h3>
+                <span style="width: 100%;" id="col-scroll">
+                <button class="pure-button pure-button-primary" onclick="scroll()">&larr; Scroll</button>
+                &nbsp;
+                <!--<button type="submit" class="pure-button pure-button-primary">Next</button>-->
+                <button class="pure-button pure-button-primary" onclick="scroll()">Scroll &rarr;</button>
+                </span>
 
-            	<form class="pure-form">
-    <fieldset>
+            </div>
 
-       XML <input id="option-one" type="checkbox" value="">&nbsp;&nbsp;&nbsp;&nbsp;
-       CSV <input id="option-one" type="checkbox" value=""> &nbsp;&nbsp;&nbsp;&nbsp;
-	   CUSTOM <input id="option-one" type="checkbox" value=""> &nbsp;&nbsp;&nbsp;&nbsp;
 
-        <button type="submit" class="pure-button pure-button-primary">Next</button>
-    </fieldset>
-</form>
 
         	</center>
+
+                <div class="extract-data" style="margin-top: 10px;"></div>
         	    
-        	    <div class="extract-data" style="margin-top: 10px;">
+        	    
+
+                <div class="col-editor">
+                        <center>
+                       <h2>Edit Attribute</h2>
+
+                       Name: <input id="attrname" placeholder="1">
+
+                       <br/><br/>
+
+                        Type: <select id="type">
+                            <option>Numerical</option>
+                            <option>Categorical</option>
+                            <option>Textual</option>
+                        </select>
+
+                        <br/><br/>
+
+                        <button class="pure-button pure-button-primary" style="background: rgb(202, 60, 60);">Delete</button> &nbsp;&nbsp;
+
+                        <button class="pure-button pure-button-primary" style="background: rgb(28, 184, 65);">Save</button>
+                    </center>
+                        
+                        
+
         	    </div>
 
        	    </div>
