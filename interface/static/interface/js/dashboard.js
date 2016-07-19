@@ -79,3 +79,33 @@ function editAttr(j) {
    $('.col-editor').show()
    $('#attrname').val(j)
 }
+
+function showPanels(j){
+   $('.load').hide();
+   $('.label').hide();
+   $('.cat').hide();
+   $('.features').hide();
+   $('.inferred').hide();
+   $('.classifier').hide();
+      $('.extract').hide();
+     $('.ftransform').hide();
+    $('.addCol').hide();
+    $('.entity').hide();
+    $('.accuracy').hide();
+
+   $('.pipeline-load').css("background-color","#0066ff");
+   $('.pipeline-cat').css("background-color","#0066ff");
+   $('.pipeline-label').css("background-color","#0066ff");
+   $('.pipeline-features').css("background-color","#0066ff");
+   $('.pipeline-inferred').css("background-color","#0066ff");
+   $('.pipeline-classifier').css("background-color","#0066ff");
+    $('.pipeline-extract').css("background-color","#0066ff");
+    $('.pipeline-ftransform').css("background-color","#0066ff");
+    $('.pipeline-addCol').css("background-color","#0066ff");
+    $('.pipeline-entity').css("background-color","#0066ff");
+    $('.pipeline-accuracy').css("background-color","#0066ff");
+    $('.pipelinem').css("background-color","#00e6ac");
+
+   $('.'+j).show();
+   $('.pipeline-'+j).css("background-color","#cc0066");
+}

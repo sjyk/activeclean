@@ -1,3 +1,32 @@
 .warning {
     color: #ff4d4d !important;
 }
+
+.col-editor{
+	position: absolute;
+	top: 200px; 
+	background: rgba(230, 247, 255, 0.9);
+	width: 50%;
+	padding: 20px;
+	color:black;
+	border: 1px solid gray;
+	display: none;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  stroke: #000;
+}
+
+.tooltip {
+  position: absolute;
+  width: 200px;
+  height: 28px;
+  pointer-events: none;
+}

@@ -22,5 +22,9 @@ from interface import settings
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.home),
+    url(r'^clean/$', views.clean),
+    url(r'^exec/$', views.execd),
+    url(r'^analyze/$', views.analyze),
+    url(r'^analyzeCustom/$', views.analyzeCustom),
     url(r'^load/$', views.load),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
